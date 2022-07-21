@@ -4,7 +4,7 @@ function component() {
   const element = document.createElement('div');
   const p = document.createElement('p');
   element.classList.add('root');
-  p.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  p.innerHTML = _.join(['Open console', 'to se result'], ' ');
   element.append(p);
   return element;
 }
