@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "webpack"
   },
   "devDependencies": {
@@ -16,6 +15,7 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.182",
+    "html-webpack-plugin": "^5.5.0",
     "lodash": "^4.17.21"
   }
 }
