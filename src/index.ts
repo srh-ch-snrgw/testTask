@@ -1,11 +1,12 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import throttledCounter from './throttled-counter';
 
 function component() {
   const element = document.createElement('div');
   const p = document.createElement('p');
   element.classList.add('root');
-  p.innerHTML = _.join(['Open console', 'to see the result'], ' ');
+  // p.innerHTML = _.join(['Open console', 'to see the result'], ' ');
+  p.innerHTML = ['Open console', 'to see the result'].join();
   element.append(p);
   return element;
 }
