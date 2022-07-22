@@ -1,12 +1,13 @@
-// import _ from 'lodash';
-import throttledCounter from './throttled-counter';
+import { join } from 'lodash';
+// import throttledCounter from './throttled-counter';
+// import throttledCounter from './throttled-counter-promises';
+import throttledCounterGen from './throttled-counter-gen';
 
 function component() {
   const element = document.createElement('div');
   const p = document.createElement('p');
   element.classList.add('root');
-  // p.innerHTML = _.join(['Open console', 'to see the result'], ' ');
-  p.innerHTML = ['Open console', 'to see the result'].join();
+  p.innerHTML = join(['Open console', 'to see the result'], ' ');
   element.append(p);
   return element;
 }
@@ -20,7 +21,7 @@ function testTask() {
   btn.innerText = 'increment click';
 
   btn.onclick = function (e) {
-    const res = throttledCounter();
+    const res = throttledCounterGen();
     console.log(
       'num',
       res,
